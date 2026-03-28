@@ -106,15 +106,7 @@ exports.onCreateWebpackConfig = (
   const { program } = store.getState()
   const publicPathClean = trim(publicPath, `/`)
 
-  const externals = [
-    {
-      name: `decap-cms-app`,
-      global: `DecapCmsApp`,
-      assetDir: `dist`,
-      assetName: `decap-cms-app.js`,
-      sourceMap: `decap-cms-app.js.map`,
-    },
-  ]
+  const externals = []
 
   if (enableIdentityWidget) {
     externals.unshift({
