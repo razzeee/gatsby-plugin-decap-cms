@@ -108,18 +108,6 @@ exports.onCreateWebpackConfig = (
 
   const externals = [
     {
-      name: `react`,
-      global: `React`,
-      assetDir: `umd`,
-      assetName: `react.production.min.js`,
-    },
-    {
-      name: `react-dom`,
-      global: `ReactDOM`,
-      assetDir: `umd`,
-      assetName: `react-dom.production.min.js`,
-    },
-    {
       name: `decap-cms-app`,
       global: `DecapCmsApp`,
       assetDir: `dist`,
