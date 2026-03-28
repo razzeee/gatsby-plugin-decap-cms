@@ -106,27 +106,7 @@ exports.onCreateWebpackConfig = (
   const { program } = store.getState()
   const publicPathClean = trim(publicPath, `/`)
 
-  const externals = [
-    {
-      name: `react`,
-      global: `React`,
-      assetDir: `umd`,
-      assetName: `react.production.min.js`,
-    },
-    {
-      name: `react-dom`,
-      global: `ReactDOM`,
-      assetDir: `umd`,
-      assetName: `react-dom.production.min.js`,
-    },
-    {
-      name: `decap-cms-app`,
-      global: `DecapCmsApp`,
-      assetDir: `dist`,
-      assetName: `decap-cms-app.js`,
-      sourceMap: `decap-cms-app.js.map`,
-    },
-  ]
+  const externals = []
 
   if (enableIdentityWidget) {
     externals.unshift({

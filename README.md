@@ -4,7 +4,7 @@
 
 **Gatsby v2 and Netlify CMS 2.x require [`gatsby-plugin-netlify-cms@^3.0.0`][2].**
 
-**Gatsby v5 and Decap CMS (decap-cms-app) 3.x require `gatsby-plugin-decap-cms@^4.0.0`, which is documented below.**
+**Gatsby v5, Decap CMS (decap-cms-app) 3.x and React 19 require `gatsby-plugin-decap-cms@^4.0.0`, which is documented below.**
 
 ## Overview
 
